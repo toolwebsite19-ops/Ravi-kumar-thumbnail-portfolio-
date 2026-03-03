@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ravi Kumar | YouTube Thumbnail Designer</title>
+    <meta
+      name="description"
+      content="Premium portfolio of Ravi Kumar, a professional graphic designer specializing in YouTube thumbnails, branding graphics, and social media creatives."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="glow glow--one" aria-hidden="true"></div>
+    <div class="glow glow--two" aria-hidden="true"></div>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="#home">Ravi Kumar</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="btn btn--small" href="#contact">Get In Touch</a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section reveal">
+        <div class="container hero__grid">
+          <div>
+            <p class="kicker">Professional Graphic Designer</p>
+            <h1>
+              Premium <span>YouTube Thumbnail Design</span> That Makes Your Content Impossible to Ignore.
+            </h1>
+            <p class="lead">
+              I help ambitious creators and brands win more clicks with strategic thumbnail design that blends
+              bold visual storytelling, conversion-focused composition, and elite-level polish.
+            </p>
+            <div class="cta-group">
+              <a class="btn btn--primary" href="#contact">Hire Me</a>
+              <a class="btn btn--ghost" href="#work">View Portfolio</a>
+            </div>
+            <div class="stats" role="list" aria-label="Design impact metrics">
+              <article role="listitem">
+                <strong>500+</strong>
+                <span>Thumbnails Designed</span>
+              </article>
+              <article role="listitem">
+                <strong>120+</strong>
+                <span>Creator Collaborations</span>
+              </article>
+              <article role="listitem">
+                <strong>24h</strong>
+                <span>Typical Turnaround</span>
+              </article>
+            </div>
+          </div>
+
+          <aside class="hero-card">
+            <p class="hero-card__label">What You Get</p>
+            <h2>Designs built for high CTR and premium brand perception.</h2>
+            <ul>
+              <li>Concept-first thumbnails tailored to your niche audience</li>
+              <li>Advanced photo manipulation, lighting, and expression enhancement</li>
+              <li>Text hierarchy optimized for mobile + desktop visibility</li>
+              <li>Consistent visual identity across your channel content</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section reveal" id="about">
+        <div class="container split">
+          <div>
+            <p class="kicker">About Ravi</p>
+            <h2>Thumbnail strategy meets world-class visual execution.</h2>
+          </div>
+          <p>
+            Ravi Kumar is a specialist in YouTube thumbnail design with a deep understanding of audience
+            psychology, color contrast, visual hierarchy, and storytelling. Each design is crafted to command
+            attention in crowded feeds while maintaining the trust and quality expected from premium brands.
+          </p>
+        </div>
+      </section>
+
+      <section class="section reveal" id="work">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Portfolio</p>
+            <h2>Recent Thumbnail Design Samples</h2>
+          </div>
+          <div class="gallery">
+            <figure><img src="assets/work-1.svg" alt="High-impact finance YouTube thumbnail concept" /></figure>
+            <figure><img src="assets/work-2.svg" alt="Bold tech tutorial YouTube thumbnail concept" /></figure>
+            <figure><img src="assets/work-3.svg" alt="Personal branding YouTube thumbnail concept" /></figure>
+            <figure><img src="assets/work-4.svg" alt="Business growth YouTube thumbnail concept" /></figure>
+            <figure><img src="assets/work-5.svg" alt="Productivity YouTube thumbnail concept" /></figure>
+            <figure><img src="assets/work-6.svg" alt="Creative storytelling YouTube thumbnail concept" /></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="services">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Services</p>
+            <h2>Design services for creators who want to scale fast.</h2>
+          </div>
+          <div class="cards">
+            <article class="card">
+              <h3>YouTube Thumbnails</h3>
+              <p>
+                Scroll-stopping thumbnails designed to increase click-through rates and elevate your channel's
+                visual identity.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Branding Graphics</h3>
+              <p>
+                Channel covers, profile visuals, and branded graphic systems that create a premium, consistent
+                presence.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Social Media Designs</h3>
+              <p>
+                High-end design creatives for Instagram, X, and LinkedIn to strengthen multi-platform brand
+                impact.
+              </p>
+            </article>
+          </div>
+          <div class="center">
+            <a class="btn btn--primary" href="#contact">Hire Me For Your Next Project</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--cta reveal" id="contact">
+        <div class="container contact">
+          <p class="kicker">Contact</p>
+          <h2>Ready to upgrade your thumbnails and attract high-paying audiences?</h2>
+          <p class="contact__number">📞 +91 8409104373</p>
+          <div class="cta-group cta-group--center">
+            <a class="btn btn--primary" href="tel:+918409104373">Call Now</a>
+            <a class="btn btn--ghost" href="mailto:hello@ravikumar.design">Get In Touch</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("reveal--active");
+            }
+          });
+        },
+        { threshold: 0.14 }
+      );
+
+      document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
